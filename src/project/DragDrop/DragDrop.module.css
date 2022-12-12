@@ -1,0 +1,63 @@
+.wrapper {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*-----------------------------------------------------------------box----*/
+.box {
+    height: 80vh;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/*-----------------------------------------------------------------button----*/
+.button {
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    padding: 0 10px;
+    font-size: 20px;
+    min-width: 250px;
+}
+.button:hover {
+    background-color: #9410ff;
+    color: white;
+}
+/*-----------------------------------------------------------------drop----*/
+
+.drop {
+    height: 60vh;
+    padding: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.drag_item {
+    margin: 10px 0;
+    width: 250px;
+    height: 50px;
+    padding: 0.75rem 1.25rem.75rem 0.75rem;
+    box-shadow: 4px 4px 16px #e1e1e1, -2px -2px 16px #fff;
+    font-size: 30px;
+    transition: all 0.2s ease 0s;
+    transform: translateY(-5px);
+}
+
+.chosen_item {
+    transition: all 0.4s ease 0s;
+    transform: translateY(5px);
+    background-color: #9410ff;
+    box-shadow: 2px 2px 30px #b6b6b6;
+}
